@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.PrincipalHome {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(rgba(7, 7, 7, 0.9), rgba(7, 7, 7, 0.9)), url('../src/assets/tiger.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-logo{
+  margin-left: 6rem;
+  display: absolute;
+  min-width: 7rem;
+  min-height: 4rem;
+  width: 7rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.NavBar{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  left: 0;
+  top: 0;
+  background-color: #539D49;
+}
+
+.pages{
+  margin: 5rem 8rem 5rem 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #F6F6F6;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #c9c9c9;
+}
+
+.info{
+  margin: 3.5rem auto 5rem auto;
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  font-weight: 300;
+  color: #F6F6F6;
+  font-size: 14px;
+}
+
+.p1Home{
+  padding: 0 0 0.9rem 0;
+}
+
+
+.Info-logo{
+  display: flex;
+  width: 30rem;
+  height: auto;
+}
+
+
+.Forma2{
+  position: absolute;
+  transform: rotate(-45.53deg);
+  width: 518.9px;
+  height: 446.3px;
+  left: 1100px;
+  top: 550px;
+}
+
+.Forma1{
+  position: absolute;
+  width: 808.97px;
+  height: 717px;
+  left: -350px;
+  top: 500px;
+  transform: rotate(16.75deg);
+}

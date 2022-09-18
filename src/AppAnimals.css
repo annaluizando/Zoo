@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.PrincipalAnimals {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F6F6F6;
+}
+
+.App-logo{
+  display: absolute;
+  min-width: 7rem;
+  min-height: 4rem;
+  width: 7rem;
+  height: 4rem;
+}
+
+.pages{
+  margin: 5rem 8rem 5rem 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #F6F6F6;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #c9c9c9;
+}
+
+.Info-logo{
+  display: flex;
+  width: 30rem;
+  height: auto;
+}
+
+.ButtonRandom{
+  display: block;
+  margin: 6.3rem 1.5rem 0 0;
+  width: 14vw;
+  height: 9.5vh;
+  max-height: 5rem;
+  max-width: 14rem;
+  background: #539D49;
+  border-radius: 14px;
+  text-decoration: none;
+  border: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #F6F6F6;
+  cursor: pointer;
+}
+
+.ButtonRandom:hover{
+  background-color:#307e25;
+  transition: 0.7s ease-in-out;
+}
+
+.Icon{
+  display: flex;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+#AnimalImg{
+  margin: 0 1.5rem 0 0;
+  align-items: center;
+  justify-content: center;
+  border: 12px solid #539D49;
+  border-radius: 8px;
+  width: 500px;
+  height: 500px;
+}
+
+.InfoGroup{
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Infos{
+  width: 25vw;
+}
+
+#LatinName{
+  margin: 0 0 3.5rem 0;
+}
+
+h1{
+  font-size: 32px;
+}
+h2{
+  font-style: italic;
+  font-size: 16px;
+}
+
+span{
+  font-size: 12px;
+}
+
+.Forma3{
+  position: absolute;
+  width: 518.9px;
+  height: 446.3px;
+  left: 1100px;
+  top: 520px;
+
+  transform: rotate(-45.53deg);
+}
+
+.DataInfoB{
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.TextB{
+  margin-right: 0.3rem;
+  margin-left: 0.6rem;
+}
+
+.DataInfoB p{
+  margin-left: 0.4rem;
+  max-width: 16rem;
+}
+
+.Footer{
+  width: 100vw;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #539D49;
+}
+
+footer{
+  margin-bottom: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

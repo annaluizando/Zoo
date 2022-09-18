@@ -1,0 +1,15 @@
+.ButtonNav {
+    background-color: #539D49;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
