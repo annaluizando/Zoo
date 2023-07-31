@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "./NavBar";
-import logo from '../src/assets/logob.png';
+import NavBar from "../NavBar/NavBar";
+import logo from '../../assets/logob.png';
 import {useState} from "react";
-import Habitat from "./assets/habitat.png";
-import Diet from "./assets/diet.svg";
-import Location from "./assets/location.svg";
+import Habitat from "../../assets/habitat.png";
+import Diet from "../../assets/diet.svg";
+import Location from "../../assets/location.svg";
 import "./AppAnimals.css";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
 export const AppAnimals = () => {
@@ -41,7 +41,7 @@ export const AppAnimals = () => {
 
             <div className="InfoGroup">
               <div className="BorderImg">
-                <img src={animal.image_link} id="AnimalImg" />
+                <img src={animal.image_link} id="AnimalImg" alt="AnimalImage"/>
               </div>
               
               <div className="Infos">
@@ -54,21 +54,21 @@ export const AppAnimals = () => {
 
 
                 <span className="DataInfoB">
-                  <img src={Habitat} className="Icon"/>
+                  <img src={Habitat} className="Icon" alt="HabitatIcon"/>
                   <strong className="TextB">HABITAT:</strong>
                   <p>{animal.habitat}</p>
                 </span>
                 
 
                 <span className="DataInfoB">
-                  <img src={Diet} className="Icon"/>
+                  <img src={Diet} className="Icon" alt="DietIcon"/>
                   <strong className="TextB">DIET:</strong>
                   <p>{animal.diet}</p>
                 </span>
                 
 
                 <span className="DataInfoB">
-                  <img src={Location} className="Icon"/>
+                  <img src={Location} className="Icon" alt="LocationIcon"/>
                   <strong className="TextB">LOCATION:</strong>
                   <p>{animal.geo_range}</p>
                 </span>

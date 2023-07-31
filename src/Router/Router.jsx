@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { AppAnimals} from "./AppAnimal";
-import { AppGallery } from "./AppGallery";
-import AppHome from "./AppHome";
+import { AppAnimals} from "../components/AppAnimal/AppAnimal";
+import { AppGallery } from "../components/AppGallery/AppGallery";
+import AppHome from "../components/AppHome/AppHome";
 
 
 export const Router = () => {

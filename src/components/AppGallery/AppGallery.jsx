@@ -1,13 +1,12 @@
 import React from "react";
-import NavBar from "./NavBar";
-import logo from '../src/assets/logob.png';
+import NavBar from "../NavBar/NavBar";
+import logo from '../../assets/logob.png';
 import {useState} from "react";
 import "./AppGallery.css";
 import { useEffect } from "react";
-import AnimalCard from "./AnimalCard";
-import "./Card.css";
+import AnimalCard from "../AnimalCard/AnimalCard";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 
 export const AppGallery = () => {
     const [animal, setAnimal] = useState([]);

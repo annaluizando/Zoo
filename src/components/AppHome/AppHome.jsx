@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import logo from '../src/assets/logob.png';
+import logo from '../../assets/logob.png';
 import './AppHome.css';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 
 function AppHome() {
   return (
