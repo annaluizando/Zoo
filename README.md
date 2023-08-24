@@ -8,8 +8,11 @@ A client from Australia wants to create a site for your Zoo, containning a prese
 
 ## ➜ Tools 💻
 • Figma (https://www.figma.com/file/qLeYVAuB2qSQCem1PTYM9S/desafio?node-id=0%3A1)
+
 • Javascript
+
 • ReactJS
+
 • CSS & HTML
 
 
