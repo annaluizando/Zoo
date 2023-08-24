@@ -3,15 +3,14 @@
 
 challenge made in 24 hours to aprimorate my knowledge in ReactJS :)
 
-#### *(Projeto relacinado ao desafio da fábrica de softwares - 2022.2
-Um cliente da Austrália deseja criar um site para seu zoológico, contendo uma apresentação para seu zoológico e uma galeria de cartões contendo informações a respeito de certos animais. No site, também deve conter um link para outra página, contendo um cartão maior em que o usuário ao clicar em um botão, irá gerar um animal aleatório com seus dados para o usuário.)
+#### *(Project related to Fábrica de Software's challenge - 2022.2
+A client from Australia wants to create a site for your Zoo, containning a presentation for it and a galery with cards that have info about certain animals. The site also has to contain a link to another page, having a bigger card that when the user clicks a button it generate a random animal for the user.)
 
 ## ➜ Tools 💻
 • Figma (https://www.figma.com/file/qLeYVAuB2qSQCem1PTYM9S/desafio?node-id=0%3A1)
-
-• CSS &HTML
-
+• Javascript
 • ReactJS
+• CSS & HTML
 
 
 
