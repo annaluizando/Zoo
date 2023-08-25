@@ -1,0 +1,9 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    color: #539D49;
+    font-family: 'Poppins';
+    align-items: center;
+    justify-items: center;
+}

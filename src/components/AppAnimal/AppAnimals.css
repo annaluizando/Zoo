@@ -7,19 +7,30 @@
   overflow-x: hidden;
 }
 
-.PrincipalAnimals {
+.generalContainer {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  display: grid;
+  justify-items: center;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F6F6F6;
+}
+
+.content{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: fit-content;
+  height: 60vh;
 }
 
 .App-logo{
-  display: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
   min-width: 7rem;
   min-height: 4rem;
   width: 7rem;
@@ -92,12 +103,18 @@ a:hover{
   align-items: center;
 }
 
-.Infos{
+.InfosContainer{
   width: 25vw;
 }
 
-#LatinName{
+.Infos{
+  margin-bottom: ;
+}
+
+#Kingdom{
   margin: 0 0 3.5rem 0;
+  font-size: small;
+  font-weight: 400;
 }
 
 h1{
@@ -125,7 +142,7 @@ span{
 .DataInfoB{
   margin-top: 0.5rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .TextB{
@@ -136,6 +153,11 @@ span{
 .DataInfoB p{
   margin-left: 0.4rem;
   max-width: 16rem;
+}
+
+.BorderImg{
+  width: auto;
+  height: auto;
 }
 
 .Footer{
@@ -153,4 +175,38 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.searchBar{
+  width: fit-content;
+  height: auto;
+  
+}
+
+.searchField{
+  padding-left: 1rem;
+  width: 21rem;
+  height: 2.5rem;
+  font-family: 'Poppins';
+  background-color: #c9c9c9;
+  border: #307e25 10px;
+  border-radius: 20px;
+}
+
+.searchButton {
+  font-family: 'Poppins';
+  font-weight: 300;
+  border: none;
+  border-radius: 10px;
+  width: 145px;
+  height: 40px;
+  margin-left: 2rem;
+  background-color: #307e25;
+  color: #F6F6F6;
+}
+
+.searchButton:hover{
+  transition: ease-in-out;
+  transition: 0.30s;
+  background-color: #539D49;
 }
