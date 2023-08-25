@@ -29,7 +29,6 @@ export const AppAnimals = () => {
             setAnimalCharacteristics(data.characteristics);
             setAnimal(data[0]);
             console.log(data[0]);
-            console.log(animal.characteristics.taxonomy)
           } else { 
             setAnimal({});
           }
