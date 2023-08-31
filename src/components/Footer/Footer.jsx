@@ -6,7 +6,7 @@ const footer = () => {
         <footer>
 
             <div className='Footer'>
-                Zoo © XXXX - 2022 All rights reserved
+                Zoo © XXXX - 2023 All rights reserved
             </div>
 
         </footer>

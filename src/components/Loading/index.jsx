@@ -1,11 +1,10 @@
+import './index.css';
 
 export default function Loading(){
     return(
-        <div className="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div className="load-container">
+            <div className="loader"></div>
+            <h1>searching...</h1>
         </div>
     )
 };

@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 
 function AppHome() {
   return (
-    <div className="PrincipalHome">
+    <>
       <header className="NavBar">
 
       <Link to = '/'><img src={logo} className="App-logo" alt="logo" /></Link>
@@ -16,6 +16,7 @@ function AppHome() {
         </div>
         
       </header>
+    <div className="PrincipalHome">
 
       <main>
 
@@ -32,6 +33,7 @@ function AppHome() {
       <Footer/>
 
     </div>
+    </>
   );
 }
 

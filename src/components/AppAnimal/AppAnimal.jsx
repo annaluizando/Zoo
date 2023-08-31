@@ -12,12 +12,11 @@ import Loading from "../Loading";
 
 export const AppAnimals = () => {
     const [animal, setAnimal] = useState([]);
-    const [animalCharacteristics, setAnimalCharacteristics] = useState({});
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState("Penguin");
     const [error, setError] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
-    const getAnimal = () => { // Define getAnimal function here
+    const getAnimal = () => {
       fetch(`https://api.api-ninjas.com/v1/animals?name=${searchTerm}`, {
         method: 'GET',
         headers: { 'X-Api-Key': 'GFl4moXrmn5j5oLSWwwZsg==GmInODQMiBDxF9rT'},
@@ -26,7 +25,7 @@ export const AppAnimals = () => {
         .then((response) => response.json())
         .then((data) => {
           if (data.length > 0){
-            setAnimalCharacteristics(data.characteristics);
+            // setAnimalCharacteristics(data[0].characteristics);
             setAnimal(data[0]);
             console.log(data[0]);
           } else { 
@@ -36,20 +35,25 @@ export const AppAnimals = () => {
         .catch((err) => {
           setError(true);
         });
+
     };
   
     const handleSearchClick = (event) => {
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault();
       if (searchTerm.trim() === "") {
-        setError(true);
         setAnimal({});
         return;
       }
-      // setLoading(true);
+
       setError(false);
       getAnimal();
     };
-  
+
+    const handleChange = (event) => {
+      setLoading(true);
+      setSearchTerm(event.target.value);
+    } 
+
     const handleKeyPress = (event) => {
       if (event.key === "Enter") {
         handleSearchClick();
@@ -58,17 +62,14 @@ export const AppAnimals = () => {
 
 
     useEffect(() => {
-      setLoading(true);
       getAnimal();
 
+      if (searchTerm.trim() !== ""){
         setTimeout(() => {
           setLoading(false);
         }, 4000);
+      }
     }, [searchTerm]);
-
-
-
-
     
 
       return (
@@ -95,7 +96,7 @@ export const AppAnimals = () => {
                       <input
                           type="text"
                           placeholder="Search your animal"
-                          onChange={(event) => setSearchTerm(event.target.value)}
+                          onChange={handleChange}
                           value={searchTerm}
                           onKeyDown={handleKeyPress}
                           className="searchField"
@@ -104,53 +105,66 @@ export const AppAnimals = () => {
                   </form>
                 </div>
 
-                <main>
 
 
-                    {loading ? (
+                    {loading && animal !== null ? (
                       <Loading/>
                     ) : (
-                      <div className="InfosContainer">
+                      
+                      
+                      <main>
 
-                        <div className="Infos">
-                          <h1>
-                            {animal.name || "No Animal Found"}
-                          </h1>
+                        <div className="InfosContainer">
 
-                          <h2 id="LatinName">
-                            {/* {animal.taxonomy.scientific_name || "No Latin Name"} */}
-                          </h2>
+                          <div className="Infos">
+                            <h1>
+                              {animal.name || "No Animal Found"}
+                            </h1>
 
-                          <h3 id="Kingdom">
-                            {/* {animal.taxonomy.kingdom || "No Kingdom"} */}
-                          </h3>
+                            <h2 id="LatinName">
+                              {animal.taxonomy.scientific_name || "No Latin Name Avaliable"}
+                            </h2>
+
+                            <h3 id="Kingdom">
+                              {animal.taxonomy.kingdom || "No Kingdom Avaliable"}
+                            </h3>
+                          </div>
+
+
+                          <span className="DataInfoB">
+                            <img src={Habitat} className="Icon" alt="HabitatIcon"/>
+                            <strong className="TextB">HABITAT:</strong>
+                            <p>{animal.characteristics.habitat || "No Habitat Avaliable"}</p>
+                          </span>
+                          
+
+                          <span className="DataInfoB">
+                            <img src={Diet} className="Icon" alt="DietIcon"/>
+                            <strong className="TextB">DIET:</strong>
+                            <p>{animal.characteristics.diet || "No Diet Avaliable"}</p>
+                          </span>
+                          
+
+                          <span className="DataInfoB">
+                            <img src={Location} className="Icon" alt="LocationIcon"/>
+                            <strong className="TextB">LOCATION:</strong>
+
+                            {animal && animal.locations && animal.locations.length >= 1 ? (
+                              animal.locations.map((location, index) => (
+                                <p key={index} className="AnimalLocation">
+                                  {index === 0 ? location : `, ${location}`}
+                                </p>
+                              ))
+                            ) : (
+                              <p className="AnimalLocation">{animal.locations || "No Location Avaliable"}</p>
+                            )}
+
+                          </span>
                         </div>
-
-
-                        <span className="DataInfoB">
-                          <img src={Habitat} className="Icon" alt="HabitatIcon"/>
-                          <strong className="TextB">HABITAT:</strong>
-                          {/* <p>{animal.characteristics.habitat}</p> */}
-                        </span>
-                        
-
-                        <span className="DataInfoB">
-                          <img src={Diet} className="Icon" alt="DietIcon"/>
-                          <strong className="TextB">DIET:</strong>
-                          {/* <p>{animal.characteristics.diet}</p> */}
-                        </span>
-                        
-
-                        <span className="DataInfoB">
-                          <img src={Location} className="Icon" alt="LocationIcon"/>
-                          <strong className="TextB">LOCATION:</strong>
-                          <p>{animal.locations}</p>
-                        </span>
-                      </div>
+                      </main>
                     )}
 
 
-                </main>
               </div>
 
 

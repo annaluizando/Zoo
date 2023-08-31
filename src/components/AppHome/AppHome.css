@@ -8,6 +8,10 @@
 
 .PrincipalHome {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -21,13 +25,20 @@
 }
 
 .App-logo{
-  margin-left: 6rem;
+  margin-left: 3rem;
   display: absolute;
   min-width: 7rem;
   min-height: 4rem;
   width: 7rem;
   height: 4rem;
   cursor: pointer;
+}
+
+.InfoContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .NavBar{
@@ -42,8 +53,6 @@
 }
 
 .pages{
-  margin: 5rem 8rem 5rem 2.5rem;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #F6F6F6;
   text-decoration: none;
@@ -54,8 +63,9 @@ a:hover{
 }
 
 .info{
-  margin: 3.5rem auto 5rem auto;
-  width: 45rem;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

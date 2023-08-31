@@ -104,11 +104,11 @@ a:hover{
 }
 
 .InfosContainer{
-  width: 25vw;
+  width: auto;
 }
 
 .Infos{
-  margin-bottom: ;
+  margin-bottom: 1rem;
 }
 
 #Kingdom{
@@ -209,4 +209,9 @@ footer{
   transition: ease-in-out;
   transition: 0.30s;
   background-color: #539D49;
+}
+
+.AnimalLocation{
+  width: auto;
+  height: auto;
 }
