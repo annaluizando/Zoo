@@ -203,6 +203,7 @@ footer{
   margin-left: 2rem;
   background-color: #307e25;
   color: #F6F6F6;
+  cursor: pointer;
 }
 
 .searchButton:hover{
