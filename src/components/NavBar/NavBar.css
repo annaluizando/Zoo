@@ -1,5 +1,31 @@
-.ButtonNav {
+.NavBarContainer{
     background-color: #539D49;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.NavBarSmallerContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.App-logo{
+    height: 5rem;
+    width: auto;
+}
+
+.ButtonNav {
+    width: auto;
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: transparent;
     border: none;
     color: white;
     text-align: center;
@@ -8,9 +34,47 @@
     font-size: 16px;
 }
 
-header{
+.menu{
     display: flex;
-    width: fit-content;
+    width: 90vw;
     height: fit-content;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.menuIcon{
+    visibility: hidden;
+}
+
+.closeIcon{
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media (max-width: 830px) {
+    .menu{
+        width: auto;
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        z-index: 1;
+        border-radius: 4px;
+        background-color: #539D49;
+    }
+
+    .menuIcon{
+        visibility: visible;
+        width: auto;
+        height: auto;
+        margin-right: 1rem;
+    }
+
+    .closeIcon{
+        visibility: visible;
+    }
 }

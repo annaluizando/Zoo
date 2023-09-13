@@ -22,27 +22,8 @@
   grid-template-rows: 1fr;
 }
 
-.App-logo{
-  display: absolute;
-  min-width: 7rem;
-  min-height: 4rem;
-  width: 7rem;
-  height: 4rem;
-}
-
-.NavBar{
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 5.8rem;
-  left: 0;
-  top: 0;
-  background-color: #539D49;
-}
 
 .pages{
-  margin: 5rem 8rem 5rem 2.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #F6F6F6;
@@ -54,8 +35,7 @@ a:hover{
 }
 
 .info{
-  margin: 3.5rem auto 0 auto;
-  width: 45rem;
+  width: 65vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,9 +47,6 @@ a:hover{
   font-size: 14px;
 }
 
-.p1Home{
-  padding: 0 0 0.9rem 0;
-}
 
 .copyright{
   font-size: 12px;
@@ -87,8 +64,7 @@ a:hover{
 
 
 .Info-logo{
-  display: flex;
-  width: 30rem;
+  width: 90%;
   height: auto;
 }
 

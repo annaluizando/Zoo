@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../NavBar/NavBar";
-import logo from '../../assets/logob.png';
 import Habitat from "../../assets/habitat.png";
 import Diet from "../../assets/diet.svg";
 import Location from "../../assets/location.svg";
 import "./AppAnimals.css";
 import Footer from "../Footer/Footer";
-import { Link } from "react-router-dom";
 import ErrorPage from "../ErrorState";
 import Loading from "../Loading";
 
 export const AppAnimals = () => {
     const [animal, setAnimal] = useState(undefined);
-    const [searchTerm, setSearchTerm] = useState("Penguin");
+    const [searchTerm, setSearchTerm] = useState("");
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
     const BASE_URL = process.env.REACT_APP_BASE_URL;
@@ -73,16 +70,6 @@ export const AppAnimals = () => {
 
     }, [animal, loading, error]);
 
-    // useEffect(() => {
-    //   if (animal){
-    //     // getAnimal();
-    //     setTimeout(() => {
-    //       setLoading(false);
-    //     }, 4000);
-    //   }
-    // }, [animal]);
-    
-
       return (
 
         <>
@@ -90,21 +77,12 @@ export const AppAnimals = () => {
             <ErrorPage/>  
           ) : (
             <div className="generalContainer">
-              <header className="NavBar">
-
-                <Link to = '/'><img src={logo} className="App-logo" alt="logo" /></Link>
-
-                <div>
-                    <NavBar/>
-                </div>
-
-              </header>
 
               <div className="content">
                 
                 {/* search field */}
                 <div className="searchBar">
-                  <form onSubmit={handleSearchClick}>
+                  <form className="form" onSubmit={handleSearchClick}>
                       <input
                           type="text"
                           placeholder="Search your animal"

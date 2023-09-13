@@ -24,16 +24,6 @@
   background-size: cover;
 }
 
-.App-logo{
-  margin-left: 3rem;
-  display: absolute;
-  min-width: 7rem;
-  min-height: 4rem;
-  width: 7rem;
-  height: 4rem;
-  cursor: pointer;
-}
-
 .InfoContainer{
   width: 100vw;
   height: 100vh;
@@ -41,21 +31,14 @@
   justify-content: center;
 }
 
-.NavBar{
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 5rem;
-  left: 0;
-  top: 0;
-  background-color: #539D49;
-}
-
 .pages{
   font-weight: 500;
   color: #F6F6F6;
   text-decoration: none;
+}
+
+.infoContainer{
+  overflow: hidden;
 }
 
 a:hover{
@@ -65,7 +48,8 @@ a:hover{
 .info{
   margin: 0;
   padding: 0;
-  height: 90vh;
+  height: 100vh;
+  width: 65vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,14 +61,10 @@ a:hover{
   font-size: 14px;
 }
 
-.p1Home{
-  padding: 0 0 0.9rem 0;
-}
 
 
 .Info-logo{
-  display: flex;
-  width: 30rem;
+  width: 90%;
   height: auto;
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
 import logo from '../../assets/logob.png';
 import {useState} from "react";
 import "./AppGallery.css";
@@ -32,15 +31,6 @@ export const AppGallery = () => {
     return ( 
 
         <div className='PrincipalGallery'>
-
-            <header className="NavBar">
-
-            <Link to = '/'><img src={logo} className="App-logo" alt="logo" /></Link>
-
-                <div>
-                    <NavBar/>
-                </div>
-            </header>
 
             <main className="General">
 
